@@ -1,0 +1,3644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - E-Commerce</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="shopease -E-commerce.css">
+</head>
+
+<body>
+    <!--  -------TOP BAR ------- -->
+    <div class="top-bar">
+        <div class="container">
+
+            <div class="top-content">
+
+                <div class="top-left">
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        PURI, Odisha, India
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 7205602599
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                        upadhyayadebabrata@gmail.com
+                    </span>
+
+                </div>
+
+                <div class="top-right">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--  -------NAVIGANTION MENU------- -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand logo" href="#">
+                <i class="fa-brands fa-shopify"></i>
+                RCM<span>Business</span>
+            </a>
+
+
+            <!-- Mobile Button -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Menu -->
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+
+                <!-- Navigation -->
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html" target="_blank">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html" target="_blank">
+                            <a href="file:///C:/Users/Debabrata/OneDrive/Desktop/Practice%20Demo%20Class/Pratice%20mini%20project/E-Commerece%20Website/E-commerece%20about.html"></a>
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html" target="_blank">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="men.html" target="_blank">
+                            Men
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="women.html" target="_blank">
+                            Women
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="electronics.html" target="_blank">
+                            Electronics
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="_blank">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Right Icons -->
+
+                <div class="nav-icons">
+
+                    <!-- Search -->
+
+                    <button class="icon-btn" id="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+
+                    <!-- Account -->
+
+                    <a href="#" class="icon-btn">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+
+
+                    <!-- Wishlist -->
+
+                    <a href="#" class="icon-btn notification">
+                        <i class="fa-regular fa-heart"></i>
+                        <span id="wishlistCount">0</span>
+                    </a>
+
+                    <!-- Cart -->
+
+                    <button class="icon-btn notification" onclick="addToCart()">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <span id="cartCount">0</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!---------SEARCH BOX ------- -->
+    <div class="search-box" id="searchBox">
+
+        <div class="container">
+
+            <div class="search-wrapper">
+
+                <input type="text" id="searchInput" placeholder="Search products...">
+
+                <button onclick="searchProduct()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+
+            <div class="hero-content">
+
+                <p>NEW COLLECTION 2026</p>
+
+                <h1>
+                    Shop Smart.<br>
+                    Live Better.
+                </h1>
+
+                <p class="hero-text">
+                    Discover premium products at amazing prices.
+                    Everything you need, all in one place.
+                </p>
+
+                <a href="shop.html" class="shop-btn">
+                    Shop Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--------ABOUT SEACTION---------->
+    <section class="about-page">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <img src="./Assets/about fram_flg.jpg" class="img-fluid rounded" alt="Online Shopping">
+
+                </div>
+                <div class="col-lg-6">
+
+                    <p class="section-title">
+                        WHO WE ARE
+                    </p>
+
+                    <h2>
+                        Making Online Shopping Simple & Better
+                    </h2>
+
+                    <p>
+                        ShopEase is an e-commerce platform created
+                        to provide customers with quality products,
+                        attractive prices and a smooth shopping experience.
+                    </p>
+
+                    <p>
+                        From fashion and electronics to everyday
+                        essentials, customers can discover a wide
+                        range of products in one convenient place.
+                    </p>
+
+                    <div class="row mt-4">
+
+                        <div class="col-6">
+                            <h3>10K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+
+                        <div class="col-6">
+                            <h3>5K+</h3>
+                            <p>Products</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--------SHOP SEACTION---------->
+    <!-- SHOP BANNER -->
+
+    <section class="page-banner">
+
+        <div class="container">
+
+            <h1>Our Shop</h1>
+
+            <p>
+                Home / Shop
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHOP SECTION -->
+
+    <section class="shop-section">
+
+        <div class="container">
+
+
+            <!-- SHOP HEADER -->
+
+            <div class="shop-header">
+
+                <div>
+
+                    <p class="section-title">
+                        OUR PRODUCTS
+                    </p>
+
+                    <h2>
+                        Explore Our Collection
+                    </h2>
+
+                </div>
+
+
+                <!-- SEARCH -->
+                <div class="product-search">
+                    <input type="text" id="productSearch" placeholder="Search product...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORY BUTTONS -->
+
+            <div class="category-buttons text-center">
+
+                <button class="category-btn active" onclick="filterProducts('all', this)">
+                    All
+                </button>
+
+                <button class="category-btn" onclick="filterProducts('fashion', this)">
+                    Fashion
+                </button>
+
+                <button class="category-btn" onclick="filterProducts('electronics', this)">
+                    Electronics
+                </button>
+
+                <button class="category-btn" onclick="filterProducts('shoes', this)">
+                    Shoes
+                </button>
+
+                <button class="category-btn" onclick="filterProducts('accessories', this)">
+                    Accessories
+                </button>
+            </div>
+
+           
+
+            <!-- PRODUCTS -->
+
+            <div class="row g-4" id="productContainer">
+
+                <!-- PRODUCT 1 -->
+                <div class="col-lg-3 col-md-6 product-item" data-category="fashion" data-name="mens jacket">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./Assets/Shop 1banner_flg.jpg" alt="Jacket">
+
+                            <button class="wishlist" onclick="addWishlist(this)">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Fashion</small>
+
+                            <h4>Men's Jacket</h4>
+
+                            <div class="price">
+                                ₹1,499
+                            </div>
+
+                            <button class="add-btn" onclick="addToCart()">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="shoes" data-name="running shoes">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./Assets/Shop 2banner_flg.jpg" alt="Shoes">
+
+                            <button class="wishlist" onclick="addWishlist(this)">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Shoes</small>
+
+                            <h4>Running Shoes</h4>
+
+                            <div class="price">
+                                ₹2,499
+                            </div>
+
+                            <button class="add-btn" onclick="addToCart()">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="electronics" data-name="headphones">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./Assets/Shop 3banner_flg.jpg" alt="Headphones">
+
+                            <button class="wishlist" onclick="addWishlist(this)">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Electronics</small>
+
+                            <h4>Wireless Headphones</h4>
+
+                            <div class="price">
+                                ₹1,999
+                            </div>
+
+                            <button class="add-btn" onclick="addToCart()">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="accessories" data-name="smart watch">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./Assets/Shop 4banner_flg.jpg" alt="Smart Watch">
+
+                            <button class="wishlist" onclick="addWishlist(this)">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Accessories</small>
+
+                            <h4>Smart Watch</h4>
+
+                            <div class="price">
+                                ₹3,499
+                            </div>
+
+                            <button class="add-btn" onclick="addToCart()">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="fashion" data-name="white t shirt">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./Assets/Shop 5banner_flg.jpg" alt="T-Shirt">
+
+                            <button class="wishlist" onclick="addWishlist(this)">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Fashion</small>
+
+                            <h4>Classic T-Shirt</h4>
+
+                            <div class="price">
+                                ₹699
+                            </div>
+
+                            <button class="add-btn" onclick="addToCart()">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="shoes" data-name="sports sneakers">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./Assets/Shop 6banner_flg.jpg" alt="Sneakers">
+
+                            <button class="wishlist" onclick="addWishlist(this)">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Shoes</small>
+
+                            <h4>Sports Sneakers</h4>
+
+                            <div class="price">
+                                ₹2,799
+                            </div>
+
+                            <button class="add-btn" onclick="addToCart()">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- PRODUCT 7 -->
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="electronics" data-name="camera">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./Assets/Shop 7banner_flg.jpg" alt="Camera">
+
+                            <button class="wishlist" onclick="addWishlist(this)">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Electronics</small>
+
+                            <h4>Digital Camera</h4>
+
+                            <div class="price">
+                                ₹24,999
+                            </div>
+
+                            <button class="add-btn" onclick="addToCart()">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 8 -->
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="accessories" data-name="backpack">
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="./Assets/Shop 8banner_flg.jpg" alt="Backpack">
+
+                            <button class="wishlist" onclick="addWishlist(this)">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <small>Accessories</small>
+
+                            <h4>Travel Backpack</h4>
+
+                            <div class="price">
+                                ₹1,299
+                            </div>
+
+                            <button class="add-btn" onclick="addToCart()">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-----------------MEN SHOP SECTION------------------------>
+
+    <section class="men-shop">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!----------- SIDEBAR--------------------->
+
+                <div class="col-lg-3">
+
+                    <aside class="shop-sidebar">
+
+
+                        <!-- CATEGORY -->
+
+                        <div class="filter-box">
+
+                            <h4>
+                                Categories
+                            </h4>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="shirt">
+                                Shirts
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="pant">
+                                Pants
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="shoes">
+                                Shoes
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="watch">
+                                Watches
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="cream">
+                                Grooming
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="category-filter" value="belt">
+                                Belts
+                            </label>
+
+                        </div>
+
+
+                        <!-- PRICE -->
+
+                        <div class="filter-box">
+
+                            <h4>
+                                Price Range
+                            </h4>
+
+                            <input type="range" class="form-range" min="500" max="30000" value="30000" id="priceRange">
+
+                            <div class="price-range-text">
+
+                                Up to ₹
+                                <span id="priceValue">
+                                    30000
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SIZE -->
+
+                        <div class="filter-box">
+
+                            <h4>
+                                Size
+                            </h4>
+
+                            <div class="size-buttons">
+
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                                <button>XL</button>
+                                <button>XXL</button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- OFFER -->
+
+                        <div class="sidebar-offer">
+
+                            <i class="fa-solid fa-tag"></i>
+
+                            <h4>
+                                Special Offer
+                            </h4>
+
+                            <p>
+                                Get up to 40% OFF on selected
+                                men's products.
+                            </p>
+
+                            <button>
+                                Shop Now
+                            </button>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+                <!--==================PRODUCTS==============-->
+
+                <div class="col-lg-9">
+                    <!-- SHOP TOP -->
+                    <div class="shop-top">
+                        <div>
+
+                            <p class="section-title">
+                                MEN'S STORE
+                            </p>
+
+                            <h2>
+                                Men's Collection
+                            </h2>
+
+                        </div>
+
+
+                        <!-- SEARCH -->
+
+                        <div class="men-search">
+
+                            <input type="text" id="menSearch" placeholder="Search men's products...">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SORT -->
+
+                    <div class="product-toolbar">
+
+                        <span>
+                            Showing Men's Products
+                        </span>
+
+                        <select id="sortProducts">
+
+                            <option value="default">
+                                Sort By
+                            </option>
+
+                            <option value="low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="high">
+                                Price: High to Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PRODUCT GRID -->
+
+                    <div class="row g-4" id="menProducts">
+                        <!------- SHIRT ----------->
+                        <div class="col-xl-4 col-md-6 product-item" data-category="shirt" data-price="1499"
+                            data-name="premium cotton shirt">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="./Assets/style men's _flg .jpg" alt="Men Shirt">
+
+                                    <span class="discount">
+                                        -25%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Clothing
+                                    </small>
+
+                                    <h4>
+                                        Premium Cotton Shirt
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(124)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹1,499
+
+                                        <del>
+                                            ₹1,999
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- PANT -->
+                        <div class="col-xl-4 col-md-6 product-item" data-category="pant" data-price="1899"
+                            data-name="slim fit jeans">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="./Assets/Gen pants _flg.jpg" alt="Men Jeans">
+
+                                    <span class="discount">
+                                        -20%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Clothing
+                                    </small>
+
+                                    <h4>
+                                        Slim Fit Jeans
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(98)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹1,899
+
+                                        <del>
+                                            ₹2,399
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- SHOES -->
+
+                        <div class="col-xl-4 col-md-6 product-item" data-category="shoes" data-price="2499"
+                            data-name="mens running shoes">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="./Assets/Shooes _flg.jgp.jpg" alt="Men Shoes">
+
+                                    <span class="discount">
+                                        -30%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Shoes
+                                    </small>
+
+                                    <h4>
+                                        Running Shoes
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(210)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹2,499
+
+                                        <del>
+                                            ₹3,599
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- WATCH -->
+
+                        <div class="col-xl-4 col-md-6 product-item" data-category="watch" data-price="3499"
+                            data-name="classic mens watch">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=80"
+                                        alt="Men Watch">
+
+                                    <span class="discount">
+                                        -35%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Watch
+                                    </small>
+
+                                    <h4>
+                                        Classic Analog Watch
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(76)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹3,499
+
+                                        <del>
+                                            ₹5,399
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CREAM -->
+
+                        <div class="col-xl-4 col-md-6 product-item" data-category="cream" data-price="799"
+                            data-name="mens face cream">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=700&q=80"
+                                        alt="Men Cream">
+
+                                    <span class="discount">
+                                        -15%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Grooming
+                                    </small>
+
+                                    <h4>
+                                        Men's Face Cream
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(156)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹799
+
+                                        <del>
+                                            ₹949
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- BELT -->
+
+                        <div class="col-xl-4 col-md-6 product-item" data-category="belt" data-price="999"
+                            data-name="leather mens belt">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=700&q=80"
+                                        alt="Men Belt">
+
+                                    <span class="discount">
+                                        -20%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Accessories
+                                    </small>
+
+                                    <h4>
+                                        Premium Leather Belt
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(84)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹999
+
+                                        <del>
+                                            ₹1,249
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FORMAL SHIRT -->
+
+                        <div class="col-xl-4 col-md-6 product-item" data-category="shirt" data-price="1799"
+                            data-name="formal mens shirt">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=80"
+                                        alt="Formal Shirt">
+
+                                    <span class="discount">
+                                        -18%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Clothing
+                                    </small>
+
+                                    <h4>
+                                        Formal Office Shirt
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(65)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹1,799
+
+                                        <del>
+                                            ₹2,199
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FORMAL PANTS -->
+
+                        <div class="col-xl-4 col-md-6 product-item" data-category="pant" data-price="2199"
+                            data-name="formal mens pants">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=700&q=80"
+                                        alt="Men Pants">
+
+                                    <span class="discount">
+                                        -22%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Clothing
+                                    </small>
+
+                                    <h4>
+                                        Formal Trousers
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(72)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹2,199
+
+                                        <del>
+                                            ₹2,799
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-------------- BATRH & BODY WASH------------------->
+
+                        <div class="col-xl-4 col-md-6 product-item" data-category="shoes" data-price="2999"
+                            data-name="mens casual sneakers">
+
+                            <div class="men-product-card">
+
+                                <div class="men-product-image">
+
+                                    <img src="./Assets/Men's deo_flg.jpg" alt="BATRH & BODY WASH">
+
+                                    <span class="discount">
+                                        -25%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="men-product-info">
+
+                                    <small>
+                                        Men's Shoes
+                                    </small>
+
+                                    <h4>
+                                        Barth & Body Wash
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★ 5*
+                                        <span>(115)</span>
+                                    </div>
+
+                                    <div class="product-price">
+
+                                        ₹2,999
+
+                                        <del>
+                                            ₹3,999
+                                        </del>
+
+                                    </div>
+
+                                    <button class="men-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PAGE BANNER ================= -->
+
+    <section class="women-banner">
+
+        <div class="container text-center">
+
+            <span>Women's store</span>
+
+            <h1>Women's Collections</h1>
+
+            <p>
+                Discover elegant Indian fashion, beautiful kurtis,
+                dresses and traditional wear.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WOMEN SHOP ================= -->
+
+    <section class="women-shop py-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- ================= SIDEBAR ================= -->
+
+                <div class="col-lg-3">
+
+                    <div class="shop-sidebar">
+
+                        <div class="filter-heading">
+                            <h4>
+                                <i class="fa-solid fa-sliders"></i>
+                                Filters
+                            </h4>
+
+                            <button onclick="clearWomenFilters()">
+                                Clear
+                            </button>
+                        </div>
+
+
+                        <!-- Categories -->
+
+                        <div class="filter-box">
+
+                            <h5>Categories</h5>
+
+                            <label>
+                                <input type="checkbox" class="women-category" value="kurta">
+                                Kurta
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="women-category" value="dress">
+                                Dress Material
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="women-category" value="dupatta">
+                                Dupatta
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="women-category" value="anarkali">
+                                Anarkals
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="women-category" value="long-kurti">
+                                Long Kurti
+                            </label>
+
+                            <label>
+                                <input type="checkbox" class="women-category" value="short-kurti">
+                                Short Kurti
+                            </label>
+
+                        </div>
+
+                        <!-- Price Range -->
+
+                        <div class="filter-box">
+
+                            <h5>Price Range</h5>
+
+                            <input type="range" class="form-range" min="300" max="10000" value="10000" id="womenPrice">
+
+                            <div class="price-range-text">
+                                ₹300 - ₹<span id="womenPriceValue">
+                                    10000
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Size -->
+
+                        <div class="filter-box">
+
+                            <h5>Size</h5>
+
+                            <div class="size-buttons">
+
+                                <button>S</button>
+                                <button>M</button>
+                                <button>L</button>
+                                <button>XL</button>
+                                <button>XXL</button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Offer -->
+
+                        <div class="sidebar-offer">
+
+                            <i class="fa-solid fa-tag"></i>
+
+                            <h5>Special Offer</h5>
+
+                            <p>
+                                Get up to 40% OFF on Women's Fashion.
+                            </p>
+
+                            <a href="#">
+                                Shop Now
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCTS ================= -->
+
+                <div class="col-lg-9">
+
+                    <!-- Search + Sort -->
+
+                    <div class="shop-top mb-4">
+
+                        <div class="women-search">
+
+                            <i class="fa-solid fa-search"></i>
+
+                            <input type="text" id="womenSearch" placeholder="Search women's products...">
+
+                        </div>
+
+                        <select id="womenSort" class="form-select">
+
+                            <option value="default">
+                                Sort By
+                            </option>
+
+                            <option value="low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="high">
+                                Price: High to Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Product Grid -->
+
+                    <div class="row g-4" id="womenProducts">
+
+
+                        <!-- Product 1 -->
+
+                        <div class="col-md-6 col-xl-4 product-item" data-category="kurta" data-price="1299"
+                            data-name="premium cotton kurta">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -20%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80"
+                                        alt="Premium Cotton Kurta">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Kurta</small>
+
+                                    <h4>
+                                        Premium Cotton Kurta
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★
+                                        <span>(124)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹1,299
+                                        <del>₹1,599</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product 2 -->
+
+                        <div class="col-md-6 col-xl-4 product-item" data-category="dress" data-price="1899"
+                            data-name="designer dress material">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -25%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=700&q=80"
+                                        alt="Dress Material">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Dress Material</small>
+
+                                    <h4>
+                                        Designer Dress Material
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★
+                                        <span>(98)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹1,899
+                                        <del>₹2,499</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product 3 -->
+
+                        <div class="col-md-6 col-xl-4 product-item" data-category="dupatta" data-price="699"
+                            data-name="designer printed dupatta">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -30%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=80"
+                                        alt="Designer Dupatta">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Dupatta</small>
+
+                                    <h4>
+                                        Designer Printed Dupatta
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span>(87)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹699
+                                        <del>₹999</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product 4 -->
+
+                        <div class="col-md-6 col-xl-4 product-item" data-category="anarkali" data-price="2499"
+                            data-name="royal anarkali dress">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -35%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80"
+                                        alt="Anarkali">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Anarkals</small>
+
+                                    <h4>
+                                        Royal Anarkali Dress
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★
+                                        <span>(156)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹2,499
+                                        <del>₹3,799</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product 5 -->
+
+                        <div class="col-md-6 col-xl-4 product-item" data-category="long-kurti" data-price="1599"
+                            data-name="stylish long kurti">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -18%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1583391733975-7c2a8d9f2c6b?auto=format&fit=crop&w=700&q=80"
+                                        alt="Long Kurti">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Long Kurti</small>
+
+                                    <h4>
+                                        Stylish Long Kurti
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★★
+                                        <span>(72)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹1,599
+                                        <del>₹1,949</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="col-md-6 col-xl-4 product-item" data-category="short-kurti" data-price="899"
+                            data-name="beautiful short kurti">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -22%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=700&q=80"
+                                        alt="Short Kurti">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Short Kurti</small>
+
+                                    <h4>
+                                        Beautiful Short Kurti
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★
+                                        <span>(112)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹899
+                                        <del>₹1,149</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product 7 -->
+
+                        <div class="col-md-6 col-xl-4 product-item" data-category="kurta" data-price="1499"
+                            data-name="embroidered festive kurta">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -15%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1610189012906-5b8b2d2f3c5a?auto=format&fit=crop&w=700&q=80"
+                                        alt="Embroidered Kurta">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Kurta</small>
+
+                                    <h4>
+                                        Embroidered Festive Kurta
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★
+                                        <span>(64)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹1,499
+                                        <del>₹1,799</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product 8 -->
+
+                        <div class="col-md-6 col-xl-4 product-item" data-category="anarkali" data-price="3299"
+                            data-name="premium party anarkali">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -40%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1583391733981-8498407e2f3b?auto=format&fit=crop&w=700&q=80"
+                                        alt="Party Anarkali">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Anarkals</small>
+
+                                    <h4>
+                                        Premium Party Anarkali
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★★
+                                        <span>(201)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹3,299
+                                        <del>₹5,499</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 9 -->
+
+                        <div class="col-md-6 col-xl-4 product-item" data-category="long-kurti" data-price="1199"
+                            data-name="printed long kurti">
+
+                            <div class="women-product-card">
+
+                                <div class="women-product-image">
+
+                                    <span class="discount">
+                                        -20%
+                                    </span>
+
+                                    <button class="heart-btn" onclick="addWishlist(this)">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=80"
+                                        alt="Printed Long Kurti">
+
+                                </div>
+
+                                <div class="women-product-info">
+
+                                    <small>Long Kurti</small>
+
+                                    <h4>
+                                        Printed Long Kurti
+                                    </h4>
+
+                                    <div class="rating">
+                                        ★★★★☆
+                                        <span>(89)</span>
+                                    </div>
+
+                                    <div class="product-price">
+                                        ₹1,199
+                                        <del>₹1,499</del>
+                                    </div>
+
+                                    <button class="women-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--------ELECTIONS SECTION---------->
+    <!-- ==================================================
+     ELECTRONICS BANNER
+================================================== -->
+
+    <section class="electronics-banner">
+
+        <div class="container text-center">
+
+            <span>ShopEase Technology</span>
+
+            <h1>Electronics Collection</h1>
+
+            <p>
+                Discover smartphones, laptops, headphones,
+                smartwatches and the latest gadgets.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+     ELECTRONICS SHOP
+================================================== -->
+
+    <section class="electronics-shop py-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+               <!-- ==================================================
+                SIDEBAR
+            ================================================== -->
+
+                <div class="col-lg-3">
+
+                    <div class="electronics-sidebar">
+
+
+                        <!-- Filter Heading -->
+
+                        <div class="filter-heading">
+
+                            <h4>
+
+                                <i class="fa-solid fa-sliders"></i>
+                                Filters
+
+                            </h4>
+
+                            <button onclick="clearElectronicsFilters()">
+                                Clear
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- CATEGORY FILTER -->
+
+                        <div class="filter-box">
+
+                            <h5>Categories</h5>
+
+
+                            <label>
+
+                                <input type="checkbox" class="electronics-category" value="mobile">
+
+                                Smartphones
+
+                            </label>
+
+
+                            <label>
+
+                                <input type="checkbox" class="electronics-category" value="laptop">
+
+                                Laptops
+
+                            </label>
+
+
+                            <label>
+
+                                <input type="checkbox" class="electronics-category" value="headphone">
+
+                                Headphones
+
+                            </label>
+
+
+                            <label>
+
+                                <input type="checkbox" class="electronics-category" value="watch">
+
+                                Smart Watches
+
+                            </label>
+
+
+                            <label>
+
+                                <input type="checkbox" class="electronics-category" value="tablet">
+
+                                Tablets
+
+                            </label>
+
+
+                            <label>
+
+                                <input type="checkbox" class="electronics-category" value="camera">
+
+                                Cameras
+
+                            </label>
+
+
+                            <label>
+
+                                <input type="checkbox" class="electronics-category" value="speaker">
+
+                                Speakers
+
+                            </label>
+
+
+                        </div>
+
+
+
+                        <!-- PRICE FILTER -->
+
+                        <div class="filter-box">
+
+                            <h5>Price Range</h5>
+
+                            <input type="range" class="form-range" id="electronicsPrice" min="500" max="150000"
+                                value="150000" step="500">
+
+                            <div class="electronics-price-text">
+
+                                ₹500 -
+                                ₹<span id="electronicsPriceValue">
+                                    150000
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- BRAND FILTER -->
+
+                        <div class="filter-box">
+
+                            <h5>Popular Brands</h5>
+
+                            <label>
+                                <input type="checkbox">
+                                Apple
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Samsung
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Sony
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                HP
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Dell
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- OFFER -->
+
+                        <div class="electronics-offer">
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                            <h5>Today's Deal</h5>
+
+                            <p>
+                                Get up to 40% OFF on selected electronics.
+                            </p>
+
+                            <a href="#">
+                                Shop Deals
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                 PRODUCTS
+            ================================================== -->
+
+                <div class="col-lg-9">
+
+
+                    <!-- SEARCH + SORT -->
+
+                    <div class="electronics-toolbar mb-4">
+
+
+                        <div class="electronics-search">
+
+                            <i class="fa-solid fa-search"></i>
+
+                            <input type="text" id="electronicsSearch" placeholder="Search electronics...">
+
+                        </div>
+
+
+                        <select class="form-select" id="electronicsSort">
+
+                            <option value="default">
+                                Sort By
+                            </option>
+
+                            <option value="low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="high">
+                                Price: High to Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                     PRODUCT GRID
+                ================================================== -->
+
+                    <div class="row g-4" id="electronicsProducts">
+
+
+
+                        <!-- PRODUCT 1 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="mobile"
+                            data-price="54999" data-name="premium smartphone">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -15%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80"
+                                        alt="Premium Smartphone">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Smartphones</small>
+
+                                    <h4>
+                                        Premium Smartphone
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★★
+                                        <span>(245)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹54,999
+                                        <del>₹64,999</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT 2 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="laptop"
+                            data-price="69999" data-name="business laptop">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -20%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80"
+                                        alt="Business Laptop">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Laptops</small>
+
+                                    <h4>
+                                        Business Laptop
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★★
+                                        <span>(189)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹69,999
+                                        <del>₹87,999</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT 3 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="headphone"
+                            data-price="4999" data-name="wireless noise cancelling headphones">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -25%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
+                                        alt="Wireless Headphones">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Headphones</small>
+
+                                    <h4>
+                                        Wireless Headphones
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★★
+                                        <span>(321)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹4,999
+                                        <del>₹6,699</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT 4 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="watch" data-price="8999"
+                            data-name="premium smart watch">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -30%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=700&q=80"
+                                        alt="Smart Watch">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Smart Watches</small>
+
+                                    <h4>
+                                        Premium Smart Watch
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★☆
+                                        <span>(156)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹8,999
+                                        <del>₹12,999</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT 5 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="tablet"
+                            data-price="32999" data-name="android tablet">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -18%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=700&q=80"
+                                        alt="Android Tablet">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Tablets</small>
+
+                                    <h4>
+                                        Android Tablet
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★★
+                                        <span>(134)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹32,999
+                                        <del>₹39,999</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT 6 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="camera"
+                            data-price="45999" data-name="digital mirrorless camera">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -22%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=80"
+                                        alt="Mirrorless Camera">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Cameras</small>
+
+                                    <h4>
+                                        Mirrorless Camera
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★★
+                                        <span>(98)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹45,999
+                                        <del>₹58,999</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT 7 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="speaker"
+                            data-price="5999" data-name="bluetooth portable speaker">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -20%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=80"
+                                        alt="Bluetooth Speaker">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Speakers</small>
+
+                                    <h4>
+                                        Bluetooth Speaker
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★☆
+                                        <span>(178)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹5,999
+                                        <del>₹7,499</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT 8 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="mobile"
+                            data-price="29999" data-name="5g smartphone">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -17%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=80"
+                                        alt="5G Smartphone">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Smartphones</small>
+
+                                    <h4>
+                                        5G Smartphone
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★★
+                                        <span>(267)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹29,999
+                                        <del>₹35,999</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- PRODUCT 9 -->
+
+                        <div class="col-md-6 col-xl-4 electronics-product-item" data-category="laptop"
+                            data-price="84999" data-name="professional laptop">
+
+                            <div class="electronics-card">
+
+                                <div class="electronics-image">
+
+                                    <span class="electronics-discount">
+                                        -12%
+                                    </span>
+
+                                    <button class="electronics-heart" onclick="addWishlist(this)">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                    </button>
+
+                                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=700&q=80"
+                                        alt="Professional Laptop">
+
+                                </div>
+
+
+                                <div class="electronics-info">
+
+                                    <small>Laptops</small>
+
+                                    <h4>
+                                        Professional Laptop
+                                    </h4>
+
+                                    <div class="electronics-rating">
+                                        ★★★★★
+                                        <span>(142)</span>
+                                    </div>
+
+                                    <div class="electronics-price">
+                                        ₹84,999
+                                        <del>₹96,999</del>
+                                    </div>
+
+                                    <button class="electronics-cart-btn" onclick="addToCart()">
+
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                        Add to Cart
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==================================================
+     CONTACT BANNER
+================================================== -->
+
+    <section class="contact-banner">
+
+        <div class="container text-center">
+
+            <span>ShopEase Support</span>
+
+            <h1>Contact Us</h1>
+
+            <p>
+                Have a question? We are here to help.
+                Get in touch with the ShopEase team.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+     CONTACT INFORMATION
+================================================== -->
+
+    <section class="contact-info-section py-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- LOCATION -->
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="contact-info-card">
+
+                        <div class="contact-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <h4>Our Location</h4>
+
+                        <p>
+                            Kolkata, West Bengal<br>
+                            India
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="contact-info-card">
+
+                        <div class="contact-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+                        <h4>Phone Number</h4>
+
+                        <p>
+                            +91 98765 43210<br>
+                            Mon - Sat
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="contact-info-card">
+
+                        <div class="contact-icon">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </div>
+
+                        <h4>Email Address</h4>
+
+                        <p>
+                            info@shopease.com<br>
+                            support@shopease.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIMING -->
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="contact-info-card">
+
+                        <div class="contact-icon">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                        </div>
+
+                        <h4>Working Hours</h4>
+
+                        <p>
+                            Monday - Saturday<br>
+                            9:00 AM - 7:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+     CONTACT FORM + DETAILS
+================================================== -->
+
+    <section class="contact-main py-5">
+
+        <div class="container">
+
+            <div class="row g-5 align-items-center">
+
+
+                <!-- LEFT CONTENT -->
+
+                <div class="col-lg-5">
+
+                    <div class="contact-content">
+
+                        <span class="contact-small-title">
+                            GET IN TOUCH
+                        </span>
+
+                        <h2>
+                            Let's Talk About
+                            <span>Your Shopping</span>
+                        </h2>
+
+                        <p>
+                            Whether you have a question about products,
+                            orders, delivery, returns or anything else,
+                            the ShopEase team is ready to help.
+                        </p>
+
+
+                        <!-- SUPPORT ITEM -->
+
+                        <div class="support-item">
+
+                            <div class="support-icon">
+
+                                <i class="fa-solid fa-headset"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h5>Customer Support</h5>
+
+                                <p>
+                                    Get quick assistance from our
+                                    support team.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ORDER ITEM -->
+
+                        <div class="support-item">
+
+                            <div class="support-icon">
+
+                                <i class="fa-solid fa-box"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h5>Order Assistance</h5>
+
+                                <p>
+                                    Need help with your order?
+                                    Contact us anytime.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SOCIAL -->
+
+                        <div class="contact-social">
+
+                            <h5>Follow Us</h5>
+
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RIGHT FORM -->
+
+                <div class="col-lg-7">
+
+                    <div class="contact-form-box">
+
+                        <div class="form-heading">
+
+                            <h3>Send Us A Message</h3>
+
+                            <p>
+                                Fill out the form and we will
+                                get back to you shortly.
+                            </p>
+
+                        </div>
+
+
+                        <form id="contactForm">
+
+
+                            <div class="row g-3">
+
+
+                                <!-- NAME -->
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Full Name
+                                    </label>
+
+                                    <div class="input-box">
+
+                                        <i class="fa-regular fa-user"></i>
+
+                                        <input type="text" id="contactName" placeholder="Enter your name" required>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- EMAIL -->
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Email Address
+                                    </label>
+
+                                    <div class="input-box">
+
+                                        <i class="fa-regular fa-envelope"></i>
+
+                                        <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- PHONE -->
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Phone Number
+                                    </label>
+
+                                    <div class="input-box">
+
+                                        <i class="fa-solid fa-phone"></i>
+
+                                        <input type="tel" id="contactPhone" placeholder="+91 XXXXX XXXXX" required>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- SUBJECT -->
+
+                                <div class="col-md-6">
+
+                                    <label>
+                                        Subject
+                                    </label>
+
+                                    <div class="input-box">
+
+                                        <i class="fa-solid fa-list"></i>
+
+                                        <select id="contactSubject" required>
+
+                                            <option value="">
+                                                Select Subject
+                                            </option>
+
+                                            <option>
+                                                Product Inquiry
+                                            </option>
+
+                                            <option>
+                                                Order Support
+                                            </option>
+
+                                            <option>
+                                                Delivery
+                                            </option>
+
+                                            <option>
+                                                Return & Refund
+                                            </option>
+
+                                            <option>
+                                                Other
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- MESSAGE -->
+
+                                <div class="col-12">
+
+                                    <label>
+                                        Your Message
+                                    </label>
+
+                                    <div class="input-box textarea-box">
+
+                                        <i class="fa-regular fa-message"></i>
+
+                                        <textarea id="contactMessage" rows="5" placeholder="Write your message..."
+                                            required></textarea>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- BUTTON -->
+
+                                <div class="col-12">
+
+                                    <button type="submit" class="contact-submit">
+
+                                        Send Message
+
+                                        <i class="fa-solid fa-paper-plane"></i>
+
+                                    </button>
+
+                                </div>
+
+
+                            </div>
+
+                        </form>
+
+
+                        <!-- SUCCESS MESSAGE -->
+
+                        <div id="contactSuccess" class="contact-success">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            Thank you! Your message has been
+                            submitted successfully.
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <iframe src="" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <!--------FEATURES SECTION---------->
+
+    <section class="features">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-truck-fast"></i>
+
+                        <div>
+                            <h5>Free Delivery</h5>
+                            <p>On orders above ₹999</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-rotate-left"></i>
+
+                        <div>
+                            <h5>Easy Returns</h5>
+                            <p>7 days return policy</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <div>
+                            <h5>Secure Payment</h5>
+                            <p>100% secure checkout</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="feature-box">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        <div>
+                            <h5>24/7 Support</h5>
+                            <p>We're here to help</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--------FOOTER TAG SECTION---------->
+    <footer class="shopease-footer">
+
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- About -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-box">
+                        <h3>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            ShopEase
+                        </h3>
+
+                        <p>
+                            ShopEase is your trusted online shopping destination.
+                            Discover fashion, electronics and everyday products
+                            at the best prices.
+                        </p>
+
+                        <div class="footer-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-box">
+                        <h4>Quick Links</h4>
+
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <i class="fa-solid fa-angle-right"></i> Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">
+                                    <i class="fa-solid fa-angle-right"></i> About
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="shop.html">
+                                    <i class="fa-solid fa-angle-right"></i> Shop
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    <i class="fa-solid fa-angle-right"></i> Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-box">
+                        <h4>Categories</h4>
+
+                        <ul>
+                            <li>
+                                <a href="men.html">
+                                    <i class="fa-solid fa-angle-right"></i> Men
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="women.html">
+                                    <i class="fa-solid fa-angle-right"></i> Women
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="electronics.html">
+                                    <i class="fa-solid fa-angle-right"></i> Electronics
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="shop.html">
+                                    <i class="fa-solid fa-angle-right"></i> New Arrivals
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-box">
+                        <h4>Contact Us</h4>
+
+                        <div class="footer-contact">
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                PURi, Odisha, India
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                +91 7205602599
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>
+                                upadhyayadebabrta@gmail.com
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-clock"></i>
+                                Mon - Sat: 8:00 AM - 7:00 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+
+                    <div class="col-lg-6">
+                        <h4>Subscribe to Our Newsletter</h4>
+                        <p>Get the latest offers and new product updates.</p>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form id="newsletterForm" class="newsletter-form">
+
+                            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+
+                            <button type="submit">
+                                Subscribe
+                            </button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-6">
+                        <p>
+                            © 2026 <strong>ShopEase</strong>.
+                            All Rights Reserved.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JavaScript -->
+
+    <script src="shopease -E-commerce.js"></script>
+
+
+</body>
+
+</html>
