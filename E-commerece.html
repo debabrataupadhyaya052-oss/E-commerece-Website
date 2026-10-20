@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEase - E-Commerce</title>
+
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -43,19 +46,19 @@
 
                 <div class="top-right">
 
-                    <a href="#">
+                    <a href="https://www.facebook.com" target="_blank">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
-                    <a href="#">
+                    <a href="https://www.instagram.com" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="#">
+                    <a href="https://t.me/" target="_blank">
                         <i class="fa-brands fa-telegram"></i>
                     </a>
 
-                    <a href="#">
+                    <a href="https://www.youtube.com" target="_blank">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
 
@@ -73,8 +76,8 @@
 
             <!-- Logo -->
 
-            <a class="navbar-brand logo" href="#">
-                <i class="fa-brands fa-shopify"></i>git
+            <a class="navbar-brand logo" href="fa-shopify.html" target="_blank">
+                <i class="fa-brands fa-shopify"></i>
                 RCM<span>Business</span>
             </a>
 
@@ -102,13 +105,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="about.html" target="_blank">
-                            <a href="file:///C:/Users/Debabrata/OneDrive/Desktop/Practice%20Demo%20Class/Pratice%20mini%20project/E-Commerece%20Website/E-commerece%20about.html"></a>
+                        <a class="nav-link active" href="about.html">
                             About
                         </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class=" nav-item">
                         <a class="nav-link" href="shop.html" target="_blank">
                             Shop
                         </a>
@@ -153,14 +155,14 @@
 
                     <!-- Account -->
 
-                    <a href="#" class="icon-btn">
+                    <a href="account.html" class="icon-btn">
                         <i class="fa-regular fa-user"></i>
                     </a>
 
 
                     <!-- Wishlist -->
 
-                    <a href="#" class="icon-btn notification">
+                    <a href="wishlist.html" class="icon-btn notification">
                         <i class="fa-regular fa-heart"></i>
                         <span id="wishlistCount">0</span>
                     </a>
@@ -288,7 +290,6 @@
     </section>
 
     <!--------SHOP SEACTION---------->
-    <!-- SHOP BANNER -->
 
     <section class="page-banner">
 
@@ -347,11 +348,11 @@
                 </button>
 
                 <button class="category-btn" onclick="filterProducts('fashion', this)">
-                    Fashion
+                    Health Care
                 </button>
 
                 <button class="category-btn" onclick="filterProducts('electronics', this)">
-                    Electronics
+                    Food & grocery
                 </button>
 
                 <button class="category-btn" onclick="filterProducts('shoes', this)">
@@ -359,21 +360,42 @@
                 </button>
 
                 <button class="category-btn" onclick="filterProducts('accessories', this)">
-                    Accessories
+                    Personal care
                 </button>
+
+                <button class="category-btn" onclick="filterProducts('accessories', this)">
+                    Household
+                </button>
+
+                <button class="category-btn" onclick="filterProducts('accessories', this)">
+                    Electronics
+                </button>
+
+                <button class="category-btn" onclick="filterProducts('accessories', this)">
+                   Women's wear
+                </button>
+
+                <button class="category-btn" onclick="filterProducts('accessories', this)">
+                    Men's wear
+                </button>
+
+                <button class="category-btn" onclick="filterProducts('accessories', this)">
+                   Kids' wear
+                </button>
+
             </div>
 
-           
+
 
             <!-- PRODUCTS -->
 
             <div class="row g-4" id="productContainer">
 
                 <!-- PRODUCT 1 -->
-                <div class="col-lg-3 col-md-6 product-item" data-category="fashion" data-name="mens jacket">
+                <div class="col-lg-3 col-md-6 product-item" data-category="healthcare"  data-name="pro plant protein powder">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="./Assets/Shop 1banner_flg.jpg" alt="Jacket">
+                            <img src="./Assets/1776926506554-270606045_flg.webp" alt="Pro Plant Protein Powder">
 
                             <button class="wishlist" onclick="addWishlist(this)">
 
@@ -385,12 +407,12 @@
 
                         <div class="product-info">
 
-                            <small>Fashion</small>
+                            <small>Nutricharge All Pro Plant Protein Powder</small>
 
-                            <h4>Men's Jacket</h4>
+                            <h4>Protein Powder</h4>
 
                             <div class="price">
-                                ₹1,499
+                                ₹1,080
                             </div>
 
                             <button class="add-btn" onclick="addToCart()">
@@ -409,13 +431,13 @@
 
                 <!-- PRODUCT 2 -->
 
-                <div class="col-lg-3 col-md-6 product-item" data-category="shoes" data-name="running shoes">
+                <div class="col-lg-3 col-md-6 product-item" data-category="healthcare" data-name="Nutricharge Kesar Pista">
 
                     <div class="product-card">
 
                         <div class="product-image">
 
-                            <img src="./Assets/Shop 2banner_flg.jpg" alt="Shoes">
+                            <img src="./Assets/221212165137661901_flg.jxl" alt="Nutricharge Kesar Pista">
 
                             <button class="wishlist" onclick="addWishlist(this)">
 
@@ -427,12 +449,12 @@
 
                         <div class="product-info">
 
-                            <small>Shoes</small>
+                            <small>Nutricharge Kesar Pista Prodiet,</small>
 
-                            <h4>Running Shoes</h4>
+                            <h4>NUTRICHARGE</h4>
 
                             <div class="price">
-                                ₹2,499
+                                ₹960
                             </div>
 
                             <button class="add-btn" onclick="addToCart()">
@@ -451,13 +473,13 @@
 
                 <!-- PRODUCT 3 -->
 
-                <div class="col-lg-3 col-md-6 product-item" data-category="electronics" data-name="headphones">
+                <div class="col-lg-3 col-md-6 product-item" data-category="healthcare" data-name="Nutricharge Gainer">
 
                     <div class="product-card">
 
                         <div class="product-image">
 
-                            <img src="./Assets/Shop 3banner_flg.jpg" alt="Headphones">
+                            <img src="./Assets/221212164820639501_flg.jxl" alt="Nutricharge Gainer">
 
                             <button class="wishlist" onclick="addWishlist(this)">
 
@@ -469,12 +491,12 @@
 
                         <div class="product-info">
 
-                            <small>Electronics</small>
+                            <small>Nutricharge Gainer</small>
 
-                            <h4>Wireless Headphones</h4>
+                            <h4>Gainer</h4>
 
                             <div class="price">
-                                ₹1,999
+                               ₹1,405
                             </div>
 
                             <button class="add-btn" onclick="addToCart()">
@@ -493,13 +515,13 @@
 
                 <!-- PRODUCT 4 -->
 
-                <div class="col-lg-3 col-md-6 product-item" data-category="accessories" data-name="smart watch">
+                <div class="col-lg-3 col-md-6 product-item" data-category="healthcare" data-name="Glycem Tab ">
 
                     <div class="product-card">
 
                         <div class="product-image">
 
-                            <img src="./Assets/Shop 4banner_flg.jpg" alt="Smart Watch">
+                            <img src="./Assets/1772101038337-763633850_flg.webp" alt="Glycem Tab ">
 
                             <button class="wishlist" onclick="addWishlist(this)">
 
@@ -511,12 +533,12 @@
 
                         <div class="product-info">
 
-                            <small>Accessories</small>
+                            <small>Nutricharge Glycem Tab  </small>
 
-                            <h4>Smart Watch</h4>
+                            <h4>Glycem Tab </h4>
 
                             <div class="price">
-                                ₹3,499
+                                ₹875
                             </div>
 
                             <button class="add-btn" onclick="addToCart()">
@@ -535,13 +557,13 @@
 
                 <!-- PRODUCT 5 -->
 
-                <div class="col-lg-3 col-md-6 product-item" data-category="fashion" data-name="white t shirt">
+                <div class="col-lg-3 col-md-6 product-item" data-category="Men's Clothing" data-name="Men's Active T-Shirt">
 
                     <div class="product-card">
 
                         <div class="product-image">
 
-                            <img src="./Assets/Shop 5banner_flg.jpg" alt="T-Shirt">
+                            <img src="./Assets/1790072929916-713534028 shirt_fig.jxl" alt="Men's Active T-Shirt">
 
                             <button class="wishlist" onclick="addWishlist(this)">
 
@@ -553,12 +575,12 @@
 
                         <div class="product-info">
 
-                            <small>Fashion</small>
+                            <small>Men's Active T-Shirts</small>
 
-                            <h4>Classic T-Shirt</h4>
+                            <h4>Authenzaa Men's</h4>
 
                             <div class="price">
-                                ₹699
+                               ₹469
                             </div>
 
                             <button class="add-btn" onclick="addToCart()">
@@ -577,13 +599,13 @@
 
                 <!-- PRODUCT 6 -->
 
-                <div class="col-lg-3 col-md-6 product-item" data-category="shoes" data-name="sports sneakers">
+                <div class="col-lg-3 col-md-6 product-item" data-category="Men's Clothing" data-name="Men's Active T-Shirt">
 
                     <div class="product-card">
 
                         <div class="product-image">
 
-                            <img src="./Assets/Shop 6banner_flg.jpg" alt="Sneakers">
+                            <img src="./Assets/1790070495993-207482689 pant_flg.jxl" alt="Casual Trouser">
 
                             <button class="wishlist" onclick="addWishlist(this)">
 
@@ -595,12 +617,12 @@
 
                         <div class="product-info">
 
-                            <small>Shoes</small>
+                            <small>Casual Trouser AECT043, D.Grey </small>
 
-                            <h4>Sports Sneakers</h4>
+                            <h4>Authenzaa Men's </h4>
 
                             <div class="price">
-                                ₹2,799
+                                ₹1,099
                             </div>
 
                             <button class="add-btn" onclick="addToCart()">
@@ -617,13 +639,13 @@
                 </div>
                 <!-- PRODUCT 7 -->
 
-                <div class="col-lg-3 col-md-6 product-item" data-category="electronics" data-name="camera">
+                <div class="col-lg-3 col-md-6 product-item" data-category="Men's Clothing" data-name="Official Shirt">
 
                     <div class="product-card">
 
                         <div class="product-image">
 
-                            <img src="./Assets/Shop 7banner_flg.jpg" alt="Camera">
+                            <img src="./Assets/1790070497191-629867636 official shirt.jpg" alt="Official Shirt">
 
                             <button class="wishlist" onclick="addWishlist(this)">
 
@@ -635,12 +657,12 @@
 
                         <div class="product-info">
 
-                            <small>Electronics</small>
+                            <small> Bermuda SHMB009, Bottle Green </small>
 
-                            <h4>Digital Camera</h4>
+                            <h4>Authenzaa Men's </h4>
 
                             <div class="price">
-                                ₹24,999
+                                ₹599
                             </div>
 
                             <button class="add-btn" onclick="addToCart()">
@@ -665,7 +687,7 @@
 
                         <div class="product-image">
 
-                            <img src="./Assets/Shop 8banner_flg.jpg" alt="Backpack">
+                            <img src="./Assets/Offical Paint.jxl" alt="Backpack">
 
                             <button class="wishlist" onclick="addWishlist(this)">
 
@@ -677,12 +699,12 @@
 
                         <div class="product-info">
 
-                            <small>Accessories</small>
+                            <small>Formal Trouser 4SFF051, M.Grey  </small>
 
-                            <h4>Travel Backpack</h4>
+                            <h4>Authenzaa Men's </h4>
 
                             <div class="price">
-                                ₹1,299
+                                ₹999
                             </div>
 
                             <button class="add-btn" onclick="addToCart()">
@@ -1654,7 +1676,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80"
+                                    <img src="./Assets/Premium Cotton Kurta_flg.jpg"
                                         alt="Premium Cotton Kurta">
 
                                 </div>
@@ -1708,8 +1730,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=700&q=80"
-                                        alt="Dress Material">
+                                    <img src="./Assets/Designer Dress Material_flg.jpg" alt="Dress Material">
 
                                 </div>
 
@@ -1762,7 +1783,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=80"
+                                    <img src="./Assets/Designer Dress Material_flg.jpg"
                                         alt="Designer Dupatta">
 
                                 </div>
@@ -1816,8 +1837,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80"
-                                        alt="Anarkali">
+                                    <img src="./Assets/Royal Anarkali Dress_flg.jpg" alt="Anarkali">
 
                                 </div>
 
@@ -1870,8 +1890,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1583391733975-7c2a8d9f2c6b?auto=format&fit=crop&w=700&q=80"
-                                        alt="Long Kurti">
+                                    <img src="./Assets/Stylish Long Kurti_flg.jpg" alt="Long Kurti">
 
                                 </div>
 
@@ -1919,8 +1938,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=700&q=80"
-                                        alt="Short Kurti">
+                                    <img src="./Assets/Beautiful Short Kurti_flg.jpg" alt="Short Kurti">
 
                                 </div>
 
@@ -1973,8 +1991,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1610189012906-5b8b2d2f3c5a?auto=format&fit=crop&w=700&q=80"
-                                        alt="Embroidered Kurta">
+                                    <img src="./Assets/Embroidered Festive Kurta_flg.jpg" alt="Embroidered Kurta">
 
                                 </div>
 
@@ -2027,8 +2044,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1583391733981-8498407e2f3b?auto=format&fit=crop&w=700&q=80"
-                                        alt="Party Anarkali">
+                                    <img src="./Assets/Premium Party Anarkali_flg.jpg" alt="Party Anarkali">
 
                                 </div>
 
@@ -2080,8 +2096,7 @@
                                         <i class="fa-regular fa-heart"></i>
                                     </button>
 
-                                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=80"
-                                        alt="Printed Long Kurti">
+                                    <img src="./Assets/Printed Long Kurti_flg.jpg" alt="Printed Long Kurti">
 
                                 </div>
 
@@ -2161,7 +2176,7 @@
             <div class="row g-4">
 
 
-               <!-- ==================================================
+                <!-- ==================================================
                 SIDEBAR
             ================================================== -->
 
